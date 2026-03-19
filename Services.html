@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#ffd9df",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "tertiary-fixed": "#e4e2e1",
+              "surface-container-high": "#e9e8e5",
+              "error": "#ba1a1a",
+              "primary": "#7e525c",
+              "surface": "#faf9f6",
+              "on-primary-container": "#5c353e",
+              "on-secondary-fixed": "#2c1600",
+              "background": "#faf9f6",
+              "surface-bright": "#faf9f6",
+              "inverse-surface": "#2f312f",
+              "outline": "#82756a",
+              "outline-variant": "#d4c4b7",
+              "inverse-primary": "#f0b8c3",
+              "surface-variant": "#e3e2e0",
+              "on-tertiary": "#ffffff",
+              "on-background": "#1a1c1a",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#ffdcbd",
+              "on-primary-fixed": "#31111a",
+              "surface-tint": "#7e525c",
+              "on-secondary-fixed-variant": "#623f18",
+              "surface-container-highest": "#e3e2e0",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#f2f1ee",
+              "surface-container-low": "#f4f3f1",
+              "secondary-fixed-dim": "#f0bd8b",
+              "tertiary": "#5f5e5e",
+              "primary-container": "#d49fa9",
+              "on-tertiary-fixed-variant": "#474747",
+              "on-surface-variant": "#50453b",
+              "surface-container": "#efeeeb",
+              "tertiary-container": "#aeacac",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed": "#1b1c1c",
+              "primary-fixed-dim": "#f0b8c3",
+              "on-surface": "#1a1c1a",
+              "secondary-container": "#ffca98",
+              "on-primary-fixed-variant": "#633b44",
+              "on-tertiary-container": "#414040",
+              "surface-dim": "#dbdad7",
+              "on-error": "#ffffff",
+              "secondary": "#7d562d",
+              "on-secondary-container": "#7a532a"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24
+    }
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #faf9f6;
+    color: #1a1c1a
+    }
+.editorial-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem
+    }
+.botanical-bg {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuCDzFJrJDU8-zzEKEN3LxoJXKVLiclQi1ajZputioSgVjJTjXugS4bcRWDviPT3imvthCOxdGOXMVCFREhwY4Ug0JYfTdfLQnz540fAgwqsNz-udp0hLeHNeD6pVm8VQOkwSuibl_LX2C_0nc06vhVTq7vz5mPe-E1jAzd9MOcezLkgXQ9xQ1NgKxZf-LkBPFJd-43U8Z5RXLwJInXhHAHuPrJoeLvx4wn6dEk2TajmA1gqc_LFKFhYCwjgWPxT3SWhk8U2kGH-Hdw);
+    background-blend-mode: overlay;
+    background-size: cover;
+    opacity: 0.05;
+    position: absolute;
+    inset: 0;
+    z-index: -1
+    }</style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(126,82,92,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="flex items-center gap-3 text-2xl font-bold font-notoSerif text-[#1a1c1a] tracking-tight" href="Index.html">
+<img alt="Charlathan VA logo" class="h-8 w-8 object-contain" src="Images/2484.png"/>
+<span>Charlathan VA</span>
+</a>
+<div class="hidden md:flex gap-10 items-center">
+<a class="text-[#50453b] dark:text-[#d4c4b7] hover:text-[#7d562d] transition-colors duration-300 font-['Noto_Serif'] font-semibold tracking-tight" href="Index.html">Home</a>
+<a class="text-[#50453b] dark:text-[#d4c4b7] hover:text-[#7d562d] transition-colors duration-300 font-['Noto_Serif'] font-semibold tracking-tight" href="About.html">About</a>
+<a class="text-[#7d562d] dark:text-[#d4a373] font-bold border-b border-[#7d562d]/20 font-['Noto_Serif'] tracking-tight" href="Services.html">Services</a>
+<a class="text-[#50453b] dark:text-[#d4c4b7] hover:text-[#7d562d] transition-colors duration-300 font-['Noto_Serif'] font-semibold tracking-tight" href="Contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#7e525c]" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="relative pt-32 pb-20 overflow-hidden">
+<div class="botanical-bg" data-alt="Subtle ethereal floral background texture"></div>
+<header class="max-w-6xl mx-auto px-6 mb-16">
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface leading-[1.1] mb-6 tracking-tight">Administrative &amp; Operations Support</h1>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed max-w-3xl">I provide thoughtful, detail-driven administrative support to help entrepreneurs and small businesses stay organized, responsive, and focused on what matters most. Services are offered through customized monthly support packages designed to grow with your business.</p>
+</header>
+<section class="max-w-6xl mx-auto px-6 space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Inbox &amp; Communication Management</h2>
+<p class="font-body text-on-surface-variant mb-4">Streamlined communication that keeps your inbox calm and your clients cared for.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Email organization and inbox clean-up</li>
+<li>Responding to routine inquiries (using approved templates)</li>
+<li>Flagging priority messages and follow-ups</li>
+<li>Ongoing client and customer communication support</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Calendar &amp; Scheduling Support</h2>
+<p class="font-body text-on-surface-variant mb-4">Seamless scheduling that protects your time and reduces back-and-forth.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Appointment scheduling and confirmations</li>
+<li>Calendar management and coordination</li>
+<li>Rescheduling, cancellations, and reminders</li>
+<li>Booking link setup and maintenance (Calendly, Acuity, etc.)</li>
+</ul>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">General Administrative Support</h2>
+<p class="font-body text-on-surface-variant mb-4">Reliable back-office support that keeps your business running smoothly.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Data entry and document updates</li>
+<li>File organization and digital systems support</li>
+<li>SOP creation and workflow documentation</li>
+<li>Spreadsheet updates and admin trackers</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Client Management &amp; Onboarding</h2>
+<p class="font-body text-on-surface-variant mb-4">A polished, professional client experience from first touch to follow-up.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>CRM updates and client records</li>
+<li>Client onboarding and offboarding tasks</li>
+<li>Intake forms, follow-ups, and client communication</li>
+<li>Database and contact management</li>
+</ul>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Invoicing &amp; Payment Support (Non-Bookkeeping)</h2>
+<p class="font-body text-on-surface-variant mb-4">Consistent systems to support timely payments and clear records.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Invoice creation and sending</li>
+<li>Payment tracking and gentle reminders</li>
+<li>Receipt organization</li>
+<li>Expense tracking and reporting</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Document &amp; Template Creation</h2>
+<p class="font-body text-on-surface-variant mb-4">Branded, organized materials that elevate your business presence.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Proposals and contracts (template-based)</li>
+<li>Welcome packets and onboarding documents</li>
+<li>Forms, questionnaires, and checklists</li>
+<li>Light proofreading and formatting</li>
+</ul>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Social Media Administrative Support</h2>
+<p class="font-body text-on-surface-variant mb-4">Behind-the-scenes support that keeps your online presence consistent.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Post scheduling and publishing</li>
+<li>Caption and content uploads</li>
+<li>Comment and message monitoring</li>
+<li>Engagement support following brand guidelines</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Email &amp; Newsletter Support</h2>
+<p class="font-body text-on-surface-variant mb-4">Polished email systems without the overwhelm.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Newsletter formatting and scheduling</li>
+<li>Subscriber list management</li>
+<li>Email campaign support</li>
+<li>Basic performance tracking</li>
+</ul>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 shadow-[0_8px_32px_0_rgba(126,82,92,0.04)]">
+<h2 class="font-headline text-2xl text-on-surface mb-3">Event &amp; Project Administrative Support</h2>
+<p class="font-body text-on-surface-variant mb-4">High-touch coordination for events and special projects.</p>
+<ul class="space-y-2 font-body text-on-surface-variant">
+<li>Event timelines and task management</li>
+<li>Vendor communication and coordination</li>
+<li>RSVP tracking and attendee communication</li>
+<li>Virtual or local day-of administrative support</li>
+<li>Project tracking and progress updates</li>
+</ul>
+</div>
+</section>
+<section class="max-w-4xl mx-auto px-6 mt-16 text-center">
+<h2 class="font-headline text-4xl text-on-surface mb-4">How Support Is Offered</h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed mb-6">Services are provided through custom monthly support packages, allowing flexibility based on your business needs. Event and project-based support is available separately or as an add-on to ongoing services.</p>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed">Not sure what level of support you need? Let’s connect for a discovery call to design a package that fits your workflow and goals. Currently accepting a limited number of clients.</p>
+<div class="mt-8">
+<a class="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-label text-sm uppercase tracking-[0.2em] shadow-lg hover:translate-y-[-2px] transition-all duration-300" href="Contact.html#contact-form">Request a Discovery Call</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-20 pb-12 bg-[#faf9f6] dark:bg-stone-950 border-t border-[#d4c4b7]/15">
+<div class="flex flex-col items-center gap-8 px-6 py-12 max-w-5xl mx-auto">
+<div class="text-lg font-['Noto_Serif'] text-[#1a1c1a] dark:text-[#faf9f6]">Charlathan VA Services</div>
+<!-- Newsletter Signup -->
+<div class="w-full max-w-md text-center">
+<p class="font-body text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    Stay connected. Receive gentle business support, planning tips, and updates—straight to your inbox.
+                </p>
+<form action="mailto:charlathan.va@gmail.com" class="flex flex-col sm:flex-row gap-2" enctype="text/plain" method="post">
+<input class="flex-1 bg-surface-container-lowest border-none border-b border-outline focus:ring-0 text-sm font-body px-4 py-3" name="email" placeholder="Email address" required="" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-3 text-xs font-label uppercase tracking-widest hover:opacity-90 transition-opacity" type="submit">Join the Newsletter</button>
+</form>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#50453b] dark:text-[#82756a] hover:text-[#7d562d] transition-colors font-['Manrope'] text-sm uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-[#50453b] dark:text-[#82756a] hover:text-[#7d562d] transition-colors font-['Manrope'] text-sm uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="text-[#50453b] dark:text-[#82756a] hover:text-[#7d562d] transition-colors font-['Manrope'] text-sm uppercase tracking-widest" href="#">Newsletter Signup</a>
+</div>
+<div class="text-[#7e525c] dark:text-[#d49fa9] font-['Manrope'] text-sm uppercase tracking-widest text-center">
+                © 2024 Charlathan VA Services. Handcrafted Excellence.
+            </div>
+</div>
+</footer>
+</body></html>

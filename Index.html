@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f2f1ee",
+                        "outline-variant": "#d4c4b7",
+                        "on-surface": "#1a1c1a",
+                        "secondary-container": "#ffca98",
+                        "background": "#faf9f6",
+                        "on-secondary-fixed": "#2c1600",
+                        "surface-container-low": "#f4f3f1",
+                        "surface-bright": "#faf9f6",
+                        "surface-container": "#efeeeb",
+                        "primary-fixed": "#ffd9df",
+                        "surface-tint": "#7e525c",
+                        "error": "#ba1a1a",
+                        "secondary": "#7d562d",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#5f5e5e",
+                        "on-primary-container": "#5c353e",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#633b44",
+                        "surface-dim": "#dbdad7",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "surface-container-high": "#e9e8e5",
+                        "primary-fixed-dim": "#f0b8c3",
+                        "on-secondary-container": "#7a532a",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "inverse-surface": "#2f312f",
+                        "tertiary-container": "#aeacac",
+                        "surface-variant": "#e3e2e0",
+                        "inverse-primary": "#f0b8c3",
+                        "outline": "#82756a",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#623f18",
+                        "secondary-fixed-dim": "#f0bd8b",
+                        "surface-container-highest": "#e3e2e0",
+                        "secondary-fixed": "#ffdcbd",
+                        "on-surface-variant": "#50453b",
+                        "on-tertiary-container": "#414040",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#d49fa9",
+                        "on-background": "#1a1c1a",
+                        "primary": "#7e525c",
+                        "surface": "#faf9f6",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#31111a"
+                    },
+                    fontFamily: {
+                        "notoSerif": ["Noto Serif", "serif"],
+                        "manrope": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .botanical-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10C50 10 45 25 30 30C15 35 10 50 10 50C10 50 25 55 30 70C35 85 50 90 50 90C50 90 55 85 70 70C85 55 90 50 90 50C90 50 85 45 70 30C55 15 50 10 50 10Z' stroke='%237e525c' stroke-opacity='0.05'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-manrope selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 backdrop-blur-md shadow-[0_8px_32px_rgba(126,82,92,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="flex items-center gap-3 text-2xl font-bold font-notoSerif text-[#1a1c1a] tracking-tight" href="Index.html">
+<img alt="Charlathan VA logo" class="h-8 w-8 object-contain" src="Images/2484.png"/>
+<span>Charlathan VA</span>
+</a>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#7d562d] font-semibold border-b border-[#7d562d]/30 transition-all duration-500 font-manrope" href="Index.html">Home</a>
+<a class="text-[#50453b] hover:text-[#7d562d] transition-colors duration-300 font-manrope" href="About.html">About</a>
+<a class="text-[#50453b] hover:text-[#7d562d] transition-colors duration-300 font-manrope" href="Services.html">Services</a>
+<a class="text-[#50453b] hover:text-[#7d562d] transition-colors duration-300 font-manrope" href="Contact.html">Contact</a>
+</div>
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-sm font-medium text-sm hover:opacity-80 transition-all duration-300 shadow-sm" href="Contact.html#contact-form">
+                Book a Consultation
+            </a>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<section class="max-w-5xl mx-auto px-8 text-center md:text-left">
+<h1 class="font-notoSerif text-5xl md:text-7xl font-bold text-on-surface tracking-tight">Charlathan VA</h1>
+<p class="text-secondary uppercase tracking-[0.3em] text-xs mt-6 mb-6">Administrative &amp; Event Planning Support for Small Businesses</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">Running a business requires vision, focus, and-most of all-energy. The administrative details and event logistics that support that vision should feel seamless—not overwhelming.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed">Charlathan VA provides refined administrative and event planning support to entrepreneurs and small businesses. Through thoughtful systems, reliable execution, and a personalized approach, I help you protect your time and move your business forward with clarity.</p>
+<div class="mt-10">
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-sm font-semibold tracking-wide hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center" href="Contact.html#contact-form">Book a Private Discovery Call</a>
+</div>
+</section>
+<section class="mt-24 bg-surface-container-low py-16">
+<div class="max-w-6xl mx-auto px-8">
+<h2 class="font-notoSerif text-4xl md:text-5xl font-bold text-on-surface mb-6">Support That Allows You to Lead Well</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">Behind every successful business is a well-managed backend. Yet many business owners find themselves spending valuable time managing inboxes, schedules, and event details instead of focusing on growth.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">You may be:</p>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-on-surface-variant text-lg">
+<li>Managing high volumes of communication and coordination</li>
+<li>Feeling weighed down by daily administrative demands</li>
+<li>Preparing for events without dedicated support</li>
+<li>Seeking structure, consistency, and follow-through</li>
+<li>Ready to operate with greater ease and professionalism</li>
+</ul>
+<p class="text-on-surface-variant text-lg leading-relaxed mt-8">Strategic support creates space—for leadership, creativity, and sustainable growth.</p>
+</div>
+</section>
+<section class="mt-24 max-w-6xl mx-auto px-8">
+<h2 class="font-notoSerif text-4xl md:text-5xl font-bold text-on-surface mb-6">Services Designed to Support Your Business</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10">Support is never one-size-fits-all. Each client relationship is approached with intention, discretion, and care.</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-8 rounded-sm shadow-[0_10px_30px_rgba(126,82,92,0.06)]">
+<h3 class="font-notoSerif text-2xl text-on-surface mb-4">Administrative Support</h3>
+<p class="text-on-surface-variant leading-relaxed">Inbox and calendar management, client communication, systems organization, and ongoing operational support.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-sm shadow-[0_10px_30px_rgba(126,82,92,0.06)]">
+<h3 class="font-notoSerif text-2xl text-on-surface mb-4">Social Media Assistance</h3>
+<p class="text-on-surface-variant leading-relaxed">Content scheduling, engagement support, and backend management to maintain a consistent, polished online presence.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-sm shadow-[0_10px_30px_rgba(126,82,92,0.06)]">
+<h3 class="font-notoSerif text-2xl text-on-surface mb-4">Event Planning Support</h3>
+<p class="text-on-surface-variant leading-relaxed">Virtual and in-person event coordination, timelines, logistics, and execution support designed to create smooth, professional experiences.</p>
+</div>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed mt-10">Services are offered through flexible hourly packages and monthly retainers, tailored to your business needs.</p>
+</section>
+<section class="mt-24 bg-surface-container-low py-16">
+<div class="max-w-5xl mx-auto px-8">
+<h2 class="font-notoSerif text-4xl md:text-5xl font-bold text-on-surface mb-6">Meet Charlie</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">I’m the founder of Charlathan VA, and I work closely with entrepreneurs who value organization, professionalism, and trusted support.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed">My approach is calm, detail-oriented, and relationship-focused. I believe that strong systems and thoughtful execution are essential to a business that runs well—and I take pride in providing support that allows my clients to operate with confidence and clarity.</p>
+</div>
+</section>
+<section class="mt-24 max-w-6xl mx-auto px-8">
+<h2 class="font-notoSerif text-4xl md:text-5xl font-bold text-on-surface mb-6">Why Clients Choose Charlathan VA</h2>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-on-surface-variant text-lg">
+<li>Specialized expertise in administrative and event planning support</li>
+<li>Highly organized, reliable, and detail-driven services</li>
+<li>Personalized service with a high-touch approach</li>
+<li>Flexible support without long-term obligations</li>
+<li>A woman-owned business supporting small businesses</li>
+</ul>
+</section>
+<section class="mt-24 max-w-5xl mx-auto px-8 text-center">
+<h2 class="font-notoSerif text-4xl md:text-5xl font-bold text-on-surface mb-6">Begin with a Conversation</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">If you are ready to step into a more supported, organized way of running your business, I invite you to schedule a private discovery call.</p>
+<p class="text-on-surface-variant text-lg leading-relaxed">This call allows us to discuss your needs, priorities, and whether working together is the right fit.</p>
+<div class="mt-8">
+<a class="bg-primary text-on-primary px-10 py-4 rounded-sm font-semibold tracking-wide hover:opacity-90 transition-all shadow-md inline-flex items-center justify-center" href="Contact.html#contact-form">Book a Private Discovery Call</a>
+</div>
+</section>
+<section class="mt-24 bg-surface-container-low py-16">
+<div class="max-w-5xl mx-auto px-8 text-center">
+<h3 class="font-notoSerif text-3xl text-on-surface mb-4">Newsletter Subscription</h3>
+<p class="text-on-surface-variant text-lg mb-8">Stay connected. Receive gentle business support, planning tips, and updates—straight to your inbox.</p>
+<form action="mailto:charlathan.va@gmail.com" class="flex flex-col sm:flex-row gap-3 justify-center" enctype="text/plain" method="post">
+<input class="flex-1 max-w-md bg-surface-container-lowest border-b border-outline/30 focus:ring-0 px-4 py-3 text-sm font-manrope" name="email" placeholder="Email address" required="" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-3 text-xs font-semibold uppercase tracking-widest hover:opacity-90 transition-opacity" type="submit">Join the Newsletter</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-[#faf9f6] pt-12 pb-10">
+<div class="max-w-6xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4">
+<div class="font-notoSerif text-lg text-[#1a1c1a]">Charlathan VA</div>
+<p class="text-[#50453b] font-manrope text-sm leading-relaxed">Administrative &amp; Event Planning Virtual Assistant</p>
+</div>
+<div class="space-y-3">
+<div class="text-secondary font-manrope text-xs tracking-widest uppercase">Contact</div>
+<a class="text-[#50453b] hover:text-[#7e525c] transition-colors font-manrope text-sm" href="mailto:charlathan.va@gmail.com">charlathan.va@gmail.com</a>
+</div>
+<div class="space-y-3">
+<div class="text-secondary font-manrope text-xs tracking-widest uppercase">Instagram</div>
+<a class="text-[#50453b] hover:text-[#7e525c] transition-colors font-manrope text-sm" href="https://instagram.com/charlathan.va" rel="noopener noreferrer" target="_blank">@charlathan.va</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

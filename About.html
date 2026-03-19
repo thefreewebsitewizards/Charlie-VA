@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#7e525c",
+                        secondary: "#7d562d",
+                        surface: "#faf9f6",
+                        "on-surface": "#1a1c1a",
+                    },
+                    fontFamily: {
+                        "headline": ["Public Sans", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"],
+                        "notoSerif": ["Noto Serif", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .floral-bg {
+            background-image: radial-gradient(circle at 10% 20%, rgba(126, 82, 92, 0.03) 0%, transparent 40%),
+                              radial-gradient(circle at 90% 80%, rgba(125, 86, 45, 0.03) 0%, transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary/10">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-stone-900/80 backdrop-blur-md shadow-[0_8px_32px_rgba(126,82,92,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="flex items-center gap-3 text-2xl font-bold font-notoSerif text-[#1a1c1a] tracking-tight" href="Index.html">
+<img alt="Charlathan VA logo" class="h-8 w-8 object-contain" src="Images/2484.png"/>
+<span>Charlathan VA</span>
+</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#50453b] dark:text-stone-400 hover:text-[#7d562d] transition-colors font-notoSerif tracking-tight" href="Index.html">Home</a>
+<a class="text-[#7d562d] dark:text-[#d4a373] font-semibold border-b border-[#7d562d]/30 font-notoSerif tracking-tight" href="About.html">About</a>
+<a class="text-[#50453b] dark:text-stone-400 hover:text-[#7d562d] transition-colors font-notoSerif tracking-tight" href="Services.html">Services</a>
+<a class="text-[#50453b] dark:text-stone-400 hover:text-[#7d562d] transition-colors font-notoSerif tracking-tight" href="Contact.html">Contact</a>
+<a class="bg-[#7e525c] text-white px-6 py-2 rounded-full hover:opacity-80 transition-opacity duration-300 font-notoSerif text-sm" href="Contact.html#contact-form">Book a Consultation</a>
+</div>
+<a class="md:hidden text-[#7e525c]" href="Contact.html#contact-form">
+<span class="material-symbols-outlined">menu</span>
+</a>
+</div>
+</nav>
+<main class="pt-32 pb-20 floral-bg">
+<section class="max-w-5xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 items-start">
+<div>
+<span class="text-sm uppercase tracking-[0.2em] text-primary/60 font-semibold mb-4 block">About</span>
+<h1 class="text-5xl md:text-7xl font-notoSerif font-bold text-on-surface leading-tight mb-8">Here thoughtful administration meets seamless execution</h1>
+<div class="space-y-6 text-[#50453b] text-lg leading-relaxed">
+<p>I’m Charlie, the founder of Charlathan VA.</p>
+<p>I provide tailored and refined administrative and event planning support to entrepreneurs and small businesses who are ready to step out of the overwhelm of administrative exhaustion and into a more supported, streamlined way of working.</p>
+<p>I believe that behind every successful business is a well-run backend—and that’s where I thrive. I specialize in managing the details that quietly hold everything together: inboxes that stay organized, schedules that flow smoothly, clients who feel cared for, and events that are thoughtfully planned from start to finish.</p>
+<p>My approach is intentional, calm, and detail-driven. I take the time to understand your business, your priorities, and your vision so the support I provide feels seamless, aligned and personalized—not transactional. Whether I’m assisting with day-to-day operations, social media support, or planning an in-person or virtual event, my goal is to create ease, structure, and consistency behind the scenes.</p>
+<p>What truly sets my work apart is the blend of administrative excellence and event planning expertise, paired with a high-touch client experience. I believe support should feel elevated, reliable, and personal—like having someone in your corner who anticipates your every need, and handles the details with the care they deserve.</p>
+<p>I work best with clients who value thoughtful collaboration, clear communication, and a supportive partnership rooted in trust. If you’re looking for someone who treats your business with the same level of care and intention as you do, you’re in the right place.</p>
+</div>
+</div>
+<div class="lg:pt-16">
+<img alt="Charlathan VA portrait" class="w-full rounded-2xl shadow-lg object-cover" src="Images/4000.png"/>
+</div>
+</div>
+<div class="mt-12 bg-stone-100/60 p-8 rounded-xl border border-stone-100 text-center">
+<p class="text-[#50453b] text-lg mb-3">Ready for calm, consistent behind the scenes support?</p>
+<p class="font-notoSerif text-2xl text-on-surface mb-6">I’d love to connect when you’re ready.</p>
+<a class="bg-primary text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity font-notoSerif inline-flex items-center justify-center" href="Contact.html#contact-form">Book a Discovery Call</a>
+</div>
+</section>
+<section class="max-w-6xl mx-auto px-8 mt-20 pb-10">
+<div class="bg-stone-100/50 rounded-xl p-10 text-center">
+<h3 class="text-3xl font-notoSerif text-on-surface mb-4">Newsletter Subscription</h3>
+<p class="text-[#50453b] text-lg mb-8">Stay connected. Receive gentle business support, planning tips, and updates—straight to your inbox.</p>
+<form action="mailto:charlathan.va@gmail.com" class="flex flex-col sm:flex-row gap-3 justify-center" enctype="text/plain" method="post">
+<input class="w-full sm:max-w-md bg-white border border-stone-200 rounded-full px-5 py-3 focus:ring-0 focus:border-primary" name="email" placeholder="Email address" required="" type="email"/>
+<button class="bg-[#1a1c1a] text-white px-8 py-3 rounded-full hover:bg-primary transition-colors duration-300 font-notoSerif" type="submit">Join the Newsletter</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 tonal-shift bg-stone-100 dark:bg-stone-900/50 border-t border-stone-200/50">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 max-w-7xl mx-auto">
+<div>
+<span class="font-notoSerif text-lg text-[#1a1c1a] dark:text-stone-100 block mb-4">Charlathan VA</span>
+<p class="font-manrope text-sm text-[#50453b] dark:text-stone-400">Curating administrative excellence with global perspective and Brazilian heart.</p>
+</div>
+<div class="flex flex-col space-y-2">
+<span class="font-bold text-xs uppercase tracking-widest text-primary mb-2">Connect</span>
+<a class="font-manrope text-sm text-[#50453b] hover:text-[#7e525c] hover:translate-y-[-2px] transition-transform" href="#">Newsletter</a>
+<a class="font-manrope text-sm text-[#50453b] hover:text-[#7e525c] hover:translate-y-[-2px] transition-transform" href="https://instagram.com/charlathan.va" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="font-manrope text-sm text-[#50453b] hover:text-[#7e525c] hover:translate-y-[-2px] transition-transform" href="https://facebook.com/charlathan.va" rel="noopener noreferrer" target="_blank">Facebook</a>
+</div>
+<div class="flex flex-col space-y-2">
+<span class="font-bold text-xs uppercase tracking-widest text-primary mb-2">Legal</span>
+<a class="font-manrope text-sm text-[#50453b] hover:text-[#7e525c] hover:translate-y-[-2px] transition-transform" href="#">Privacy Policy</a>
+<div class="pt-4">
+<p class="font-manrope text-xs text-[#50453b] dark:text-stone-400">© 2024 Charlathan VA. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
